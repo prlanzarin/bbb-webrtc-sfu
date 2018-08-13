@@ -1,6 +1,6 @@
 kurento:
   - ip: ""
-  - url: ws://HOST/kurento
+    url: ws://HOST/kurento
 video-transposing-ceiling: 50
 audio-transposing-ceiling: 100
 localIpAddress: ""
