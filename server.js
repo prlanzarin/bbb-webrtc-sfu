@@ -14,10 +14,9 @@ const WebsocketConnectionManager = require('./lib/connection-manager/WebsocketCo
 const Logger = require('./lib/utils/Logger');
 const ProcessManager = require('./lib/ProcessManager.js');
 const PM = new ProcessManager();
+const CM = new ConnectionManager();
 
 PM.start();
-
-const CM = new ConnectionManager(PM.screenshareProcess, PM.videoProcess);
 
 let websocketManager = new WebsocketConnectionManager(server.getServerObject(), '/bbb-webrtc-sfu');
 
