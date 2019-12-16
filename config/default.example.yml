@@ -215,3 +215,34 @@ addTimestampToAkkaMessages: true
 # cleared from the system when a leave call for it is sent OR it has the autoLeave
 # optional parameter set to true and all of its medias were cleared
 allowDuplicateExtUserId: true
+bitrateThresholds:
+  global:
+    video:
+      - threshold: 0
+        bitrateMultiplier: 1
+    content:
+      - threshold: 0
+        bitrateMultiplier: 1
+    audio:
+      - threshold: 0
+        bitrateMultiplier: 1
+  room:
+    video:
+      - threshold: 0
+        bitrateMultiplier: 1
+    content:
+      - threshold: 0
+        bitrateMultiplier: 1
+    audio:
+      - threshold: 0
+        bitrateMultiplier: 1
+  user:
+    video:
+      - threshold: 0
+        bitrateMultiplier: 1
+    content:
+      - threshold: 0
+        bitrateMultiplier: 1
+    audio:
+      - threshold: 0
+        bitrateMultiplier: 1
