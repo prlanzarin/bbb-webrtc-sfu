@@ -89,9 +89,9 @@ bbb-stream:
     bot: true
     joinViaHtml5: true
   gop:
-    rnp: 5
-    youtube: 12
-    rtmp: 12
+    rnp: '5'
+    youtube: '12'
+    rtmp: '12'
   k8s:
     namespace: default
     template:
@@ -101,7 +101,12 @@ bbb-stream:
         name: bbb-stream-
       spec:
         template:
+          metadata:
+            labels:
+              "mconf-streaming": 'true'
           spec:
+            imagePullSecrets:
+            - name: mconf-dockerhub-cred
             containers:
             - name: bbb-stream-firefox
               image: gcr.io/PROJECT-ID/bbb-stream
