@@ -115,7 +115,7 @@ bbb-stream:
                 value: ""
               - name: OUTPUT
                 value: ""
-              - name: "RTMP"
+              - name: "FORMAT"
                 value: "rtmp"
               - name: "GOP"
                 value: ""
