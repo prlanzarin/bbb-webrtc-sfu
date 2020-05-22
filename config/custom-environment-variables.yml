@@ -38,6 +38,8 @@ bbb-stream:
   bot_join_options:
     __name: BOT_JOIN_OPTS
     __format: json
+  k8s:
+    namespace: STREAM_K8S_NAMESPACE
 
 rnp:
   oauth2:
