@@ -98,7 +98,7 @@ bbb-stream:
       apiVersion: batch/v1
       kind: Job
       metadata:
-        name: bbb-stream-
+        name: stream-
       spec:
         template:
           metadata:
